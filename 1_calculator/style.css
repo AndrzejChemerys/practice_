@@ -9,6 +9,8 @@
     font-size: 25;
     margin: 2;
     cursor: pointer;
+    background: slategrey;
+    color: antiquewhite;
 }
 
 .textview {
@@ -16,5 +18,22 @@
     margin: 5;
     font-size: 25;
     padding: 5;
+    border: none;
+    color: slategrey;
+    
+}
+
+.main {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translateX(-50%) translateY(-50%);
+    background: lightgrey;
+    
+}
+
+.bg {
+    background: linear-gradient(to top, lightblue, white);
+    height: 100%;
     
 }
