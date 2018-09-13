@@ -7,5 +7,5 @@
 
 > Calculator webpage screenshot
 
-![attached screenshot of passed materials - calculator](img_final_scrn/js_calc.jpg)    <br/><br/>
+![attached screenshot of passed materials - calculator](JS/1_calculator/img_final_scrn/js_calc.jpg)    <br/><br/>
 - - -
