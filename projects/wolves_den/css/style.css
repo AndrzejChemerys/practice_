@@ -5,7 +5,6 @@ Andrii Chemererys.
 ===========================*/
 
 
-
  /*=========================
 Main styles
 ===========================*/
@@ -42,14 +41,13 @@ Main styles
      flex-basis: 5vh;
  }
 
-.w-logo {
-    position: absolute;
-    height: 150%;
-    top: 55%;
-    left: 20%;
-    transform: translate(-50%, -50%)
-
-}
+ .w-logo {
+     position: absolute;
+     height: 150%;
+     top: 55%;
+     left: 20%;
+     transform: translate(-50%, -50%)
+ }
 
  /*=========================
 header and title styles
@@ -59,12 +57,10 @@ header and title styles
      position: relative;
 
      /*     bg image styles */
-
      background-image: url(../img/top_bg.jpg);
      width: 100%;
 
      /*     flexbox properties */
-
      align-self: stretch;
      flex-basis: 14vh;
  }
@@ -72,14 +68,12 @@ header and title styles
  .wp-title {
 
      /*     title text styles */
-
      color: white;
      font-size: 28px;
      font-weight: bold;
      text-decoration: underline;
 
      /*     centering the title */
-
      max-width: 1200px;
      position: absolute;
      top: 50%;
@@ -94,7 +88,6 @@ main content styles
  section {
 
      /*    flexbox styles */
-
      display: flex;
      flex-wrap: nowrap;
      align-items: stretch;
@@ -116,27 +109,23 @@ main content styles
      background-repeat: no-repeat;
      background-position: center;
      background-size: cover;
-
-     height: 75%;
+     height: 70%;
      width: 90%;
      position: absolute;
      top: 50%;
      left: 75%;
-     transform: translate(-70%, -50%);
-
-
+     transform: translate(-75%, -50%);
  }
 
  /*    main form wraper styles */
 
  aside {
-     flex-basis: 40%;
+     flex-basis: 45%;
      min-width: 340px;
      background-color: cadetblue;
      border: 5px red solid;
      margin: 25px;
      padding: 25px;
-
      background-image: url(../img/form-bg.jpg);
      background-repeat: no-repeat;
      background-position: center;
@@ -155,7 +144,7 @@ main form styles
      text-decoration: bold;
      color: black;
      text-align: center;
-     margin-bottom: 20px;
+     margin-bottom: 18px;
  }
 
  /*=========================
@@ -225,22 +214,18 @@ Terms and Conditions span styles
      font-size: 16px;
      display: inline-block;
      margin-left: 30px;
-
  }
 
-
-li>label {
-    font-size: 16px;
-    color: red;
-    
-}
+ li > label {
+     font-size: 16px;
+     color: red;
+ }
 
  /*=========================
 button SUBMIT styles
 ===========================*/
 
  input.hs-button {
-
      width: 100%;
      max-width: 500px;
      padding: 15px;
@@ -257,6 +242,7 @@ button SUBMIT styles
      color: black;
      text-align: center;
      margin-bottom: 20px;
+     margin-top: 20px;
  }
 
  /*=========================
@@ -269,26 +255,24 @@ footer styles
      background-image: url(../img/bot_bg.jpg);
 
      /*     flexbox properties */
-
      align-self: stretch;
      flex-basis: 9vh;
      width: 100%;
-     padding: 25px;
+     padding-top: 35px;
      text-align: center;
  }
 
-.f-info {
-    font-size: 10px;
-}
+ .f-info {
+     font-size: 10px;
+ }
 
-.f-wolves {
-    font-weight: bold;
-}
+ .f-wolves {
+     font-weight: bold;
+ }
 
-
-/*=========================
+ /*=========================
 ===========================
- /* media queries 
+media queries 
 ===========================
 ===========================*/
 
@@ -313,9 +297,8 @@ footer styles
 
  @media (max-width: 600px) {
      section {
-         width: 100%;
+         width: 95%;
      }
-
 
      h1 {
          font-size: 20px;
@@ -324,4 +307,12 @@ footer styles
      .wp-title {
          font-size: 24px;
      }
-}
+
+     h2 {
+         font-size: 14px;
+     }
+
+     aside {
+         margin-top: 0px;
+     }
+ }
