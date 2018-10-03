@@ -1,0 +1,327 @@
+ /*=========================
+CSS styles for Wolves Den test web page.
+Warsaw, 2018.
+Andrii Chemererys.
+===========================*/
+
+
+
+ /*=========================
+Main styles
+===========================*/
+
+ /*reset*/
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+
+     /*     flexbox properties*/
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+
+     /*     main body styles*/
+     min-height: 100vh;
+     background-color: white;
+     font-family: 'open sans', sans-serif;
+     color: white;
+     font-size: 30px;
+ }
+
+ nav {
+     background-color: #fff;
+     position: relative;
+
+     /*     flexbox properties */
+     align-self: stretch;
+     flex-basis: 5vh;
+ }
+
+.w-logo {
+    position: absolute;
+    height: 150%;
+    top: 55%;
+    left: 20%;
+    transform: translate(-50%, -50%)
+
+}
+
+ /*=========================
+header and title styles
+===========================*/
+
+ header {
+     position: relative;
+
+     /*     bg image styles */
+
+     background-image: url(../img/top_bg.jpg);
+     width: 100%;
+
+     /*     flexbox properties */
+
+     align-self: stretch;
+     flex-basis: 14vh;
+ }
+
+ .wp-title {
+
+     /*     title text styles */
+
+     color: white;
+     font-size: 28px;
+     font-weight: bold;
+     text-decoration: underline;
+
+     /*     centering the title */
+
+     max-width: 1200px;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+ }
+
+ /*=========================
+main content styles
+===========================*/
+
+ section {
+
+     /*    flexbox styles */
+
+     display: flex;
+     flex-wrap: nowrap;
+     align-items: stretch;
+     background-color: white;
+     flex-grow: 1;
+     width: 100%;
+     max-width: 1200px;
+ }
+
+ main {
+     flex-grow: 1;
+     position: relative;
+ }
+
+ /*    book picture styles */
+
+ div.main-pict {
+     background-image: url(../img/main_pict_1.jpg);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+
+     height: 75%;
+     width: 90%;
+     position: absolute;
+     top: 50%;
+     left: 75%;
+     transform: translate(-70%, -50%);
+
+
+ }
+
+ /*    main form wraper styles */
+
+ aside {
+     flex-basis: 40%;
+     min-width: 340px;
+     background-color: cadetblue;
+     border: 5px red solid;
+     margin: 25px;
+     padding: 25px;
+
+     background-image: url(../img/form-bg.jpg);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+ }
+
+ /*=========================
+===========================
+main form styles
+===========================
+===========================*/
+
+ h1 {
+     max-width: 500px;
+     font-size: 28px;
+     text-decoration: bold;
+     color: black;
+     text-align: center;
+     margin-bottom: 20px;
+ }
+
+ /*=========================
+input fields styles
+===========================*/
+
+ .hs-input {
+     margin: 20px 0;
+     padding: 5px;
+     height: 30px;
+     width: 90%;
+ }
+
+ div.hs-firstname {
+     text-align: center;
+     font-size: 16px;
+     color: black;
+     margin: 0;
+     width: 90%;
+ }
+
+ div.hs-lastname {
+     text-align: center;
+     font-size: 16px;
+     color: black;
+     margin: 0;
+     width: 80%;
+ }
+
+ div.hs-email {
+     text-align: center;
+     font-size: 16px;
+     color: black;
+     margin: 0;
+     width: 100%;
+ }
+
+ div.input > input.hs-input {
+     background-color: white;
+     border: 1px solid #ddd;
+     border-radius: 5px;
+ }
+
+ /*=========================
+Terms and Conditions styles
+===========================*/
+
+ ul.inputs-list {
+     list-style: none;
+ }
+
+ /*=========================
+Terms and Conditions checkbox styles
+===========================*/
+
+ label.hs-form-booleancheckbox-display > input {
+     margin: 5px 10px;
+     position: absolute;
+ }
+
+ /*=========================
+Terms and Conditions span styles
+===========================*/
+
+ label.hs-form-booleancheckbox-display > span {
+     color: black;
+     font-size: 16px;
+     display: inline-block;
+     margin-left: 30px;
+
+ }
+
+
+li>label {
+    font-size: 16px;
+    color: red;
+    
+}
+
+ /*=========================
+button SUBMIT styles
+===========================*/
+
+ input.hs-button {
+
+     width: 100%;
+     max-width: 500px;
+     padding: 15px;
+     font-size: 20px;
+     text-transform: uppercase;
+     background-color: red;
+     color: white;
+     margin: 20px 0;
+ }
+
+ h2 {
+     max-width: 500px;
+     font-size: 16px;
+     color: black;
+     text-align: center;
+     margin-bottom: 20px;
+ }
+
+ /*=========================
+===========================
+footer styles
+===========================
+===========================*/
+
+ footer {
+     background-image: url(../img/bot_bg.jpg);
+
+     /*     flexbox properties */
+
+     align-self: stretch;
+     flex-basis: 9vh;
+     width: 100%;
+     padding: 25px;
+     text-align: center;
+ }
+
+.f-info {
+    font-size: 10px;
+}
+
+.f-wolves {
+    font-weight: bold;
+}
+
+
+/*=========================
+===========================
+ /* media queries 
+===========================
+===========================*/
+
+ @media (max-width: 920px) {
+     section {
+         flex-direction: column;
+         width: 70%;
+     }
+
+     main {
+         flex-grow: 2;
+     }
+
+     aside {
+         flex-grow: 1;
+     }
+
+     div.main-pict {
+         display: none;
+     }
+ }
+
+ @media (max-width: 600px) {
+     section {
+         width: 100%;
+     }
+
+
+     h1 {
+         font-size: 20px;
+     }
+
+     .wp-title {
+         font-size: 24px;
+     }
+}
