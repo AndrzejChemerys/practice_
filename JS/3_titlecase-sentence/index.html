@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function titleCase(str){
+        let words=str.toLowerCase().split(" ");
+        for (let i=0; i<words.length; i++) {
+            words[i]=words[i][0].toUpperCase()+words[i].slice(1);
+        }
+        console.log(words.join(" "))
+    }
+    titleCase("I hear melodies in my head Find little notes in my bed")
+
+    </script>
+</body>
+</html>
