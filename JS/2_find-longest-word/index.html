@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>       
+        function findLongestWord(text){
+            
+            let words=text.split(" ");
+            let longest="";
+            for (let word of words) {
+                if(word.length>longest.length) longest=word;
+                
+            }   
+            console.log(words);
+            console.log(longest);
+            console.log(longest.length);
+        }
+
+        findLongestWord("How I wish, how I wish you were here Were just two lost souls swimming in a fish bowl Year after year Running over the same old ground And how we found The same old fears Wish you were here")
+    </script>
+</body>
+</html>
