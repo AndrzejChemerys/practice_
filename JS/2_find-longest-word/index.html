@@ -10,6 +10,9 @@
     <script>       
         function findLongestWord(text){
             
+            //short ver:
+            // console.log(text.split(" ").sort(function(a, b) {return b.length-a.length})[0]);
+
             let words=text.split(" ");
             let longest="";
             for (let word of words) {
