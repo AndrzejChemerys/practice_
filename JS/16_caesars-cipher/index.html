@@ -12,8 +12,12 @@
             let solved = "";
             for (let i=0; i<str.length; i++) {
                let asciiNum = (str[i].charCodeAt());
-               if (asciiNum>=65 && asciiNUm<=90) {
+               if (asciiNum>=65 && asciiNUm<=77) {
                    solved+=String.fromCharCode(asciiNum+13);
+               } else if (asciiNum>=78 && asciiNum<=90) {
+                   solved +=String.fromCharCode(asciiNum-13);
+               } else  {
+                   solved+=str[i];
                }
                 
             }
