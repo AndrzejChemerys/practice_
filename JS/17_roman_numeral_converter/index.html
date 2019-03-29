@@ -28,8 +28,14 @@
             let roman = "";
 
             for (let key in romanToNum) {
-                console.log("key:", key)
-                console.log("value: ", romanToNum[key]);
+                console.log(key)
+                // console.log("key:", key)
+                // console.log("value: ", romanToNum[key]);
+                while (num>=romanToNum[key]){
+                    roman+=key;
+                    num-=romanToNum[key];
+                    console.log("num us decreased: ", num)
+                }
             }
         }
         convertToRoman(3);
