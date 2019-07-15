@@ -1,0 +1,33 @@
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.stripes {
+    width: 85%;
+    height: 100px;
+    border: 2px solid navy;
+    background-image: repeating-linear-gradient(
+        135deg,
+    navy 0px,
+    navy 10px,
+    aqua 10px,
+    aqua 20px);
+
+    background-repeat: no-repeat;
+    animation: progress 5s infinite linear;
+}
+
+@keyframes progress {
+    from {
+        background-size: 0% 100%;
+    }
+
+    to {
+        background-size: 100% 100%;
+    }
+}
