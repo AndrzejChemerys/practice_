@@ -15,6 +15,7 @@ body {
     border-left-color:cornflowerblue;
     border-right-color: goldenrod; */
     border-bottom-color: magenta;
+    border-left-color: magenta;
     transition: 2s;
 
 }
