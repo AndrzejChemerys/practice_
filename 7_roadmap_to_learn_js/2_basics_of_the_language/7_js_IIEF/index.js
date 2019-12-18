@@ -30,6 +30,12 @@ console.log(
       })()
       )
 
+console.log(
+    (function doSomething() {
+        return 3+3;
+      })()
+    )
+
 
 
 
