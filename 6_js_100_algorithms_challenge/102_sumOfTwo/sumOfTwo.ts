@@ -4,6 +4,11 @@ function sumOfTwo(a: number[], b: number[], v: number): boolean {
     for (let num of a) {
         const difference = v - num;
         hashMap[difference] = difference;
+        console.log(v);
+        console.log(num);
+        console.log(hashMap);
+        console.log(hashMap[difference]);
+        console.log(difference);
     }
 
     for (let num of b) {
