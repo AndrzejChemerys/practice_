@@ -12,6 +12,7 @@ function isLucky(n: number): boolean {
 
     const secondHalf = getTotal(luckyN.substring(half, luckyN.length));
 
+    return firstHalf === secondHalf;
 }
 
 function getTotal(n: string) {
