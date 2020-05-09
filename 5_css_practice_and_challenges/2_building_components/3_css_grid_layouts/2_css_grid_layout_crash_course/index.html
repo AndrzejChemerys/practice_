@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grids</title>
+    <style>
+        .wrapper {
+            display: grid;
+            grid-template-columns: 40% 30% 30%;
+            /* grid-column-gap: 1em;
+            grid-row-gap: 1em; */
+            grid-gap: 1em;
+        }
+
+        .wrapper>div {
+            background: #eee;
+            padding: 1em;
+        }
+
+        .wrapper>div:nth-child(odd) {
+            background: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt animi facere magni atque expedita
+            delectus labore error cumque incidunt maiores! Velit excepturi sapiente et id tempore voluptate mollitia vel
+            culpa?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt animi facere magni atque expedita
+            delectus labore error cumque incidunt maiores! Velit excepturi sapiente et id tempore voluptate mollitia vel
+            culpa?
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt animi facere magni atque expedita
+            delectus labore error cumque incidunt maiores! Velit excepturi sapiente et id tempore voluptate mollitia vel
+            culpa?
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt animi facere magni atque expedita
+            delectus labore error cumque incidunt maiores! Velit excepturi sapiente et id tempore voluptate mollitia vel
+            culpa?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt animi facere magni atque expedita
+            delectus labore error cumque incidunt maiores! Velit excepturi sapiente et id tempore voluptate mollitia vel
+            culpa?
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt animi facere magni atque expedita
+            delectus labore error cumque incidunt maiores! Velit excepturi sapiente et id tempore voluptate mollitia vel
+            culpa?
+        </div>
+        <div>Hello</div>
+    </div>
+</body>
+
+</html>
