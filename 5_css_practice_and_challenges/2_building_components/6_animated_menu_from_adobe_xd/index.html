@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.min.css">
+    <title>Mega Menu</title>
+</head>
+<body>
+    
+    <nav id="overlay">
+        <img src="img/close_menu.svg" class="close-btn" id="close-menu" alt="">
+
+        <ul>
+            <li>
+                <a href="#">home</a>
+                <span>hurry, get back to the choppa!</span>
+            </li>
+            <li>
+                <a href="#">home</a>
+                <span>hurry, get back to the choppa!</span>
+            </li>
+            <li>
+                <a href="#">home</a>
+                <span>hurry, get back to the choppa!</span>
+            </li>
+            <li>
+                <a href="#">home</a>
+                <span>hurry, get back to the choppa!</span>
+            </li>
+        </ul>
+    </nav>
+
+    <header>
+        <a href="#" class="logo">mysite</a>
+
+        <img src="img/hamburger_menu.svg" class="menu-btn" id="open-menu" alt="">
+    </header>
+    
+    <section>
+        <h1>this is fancy</h1>
+    </section>
+
+    <script>
+        let overlay = document.getElementById('overlay');
+        let closeMenu = document.getElementById('close-menu');
+
+        document.getElementById('open-menu').addEventListener('click', function(){
+            overlay.classList.add('show-menu');
+        });
+
+
+
+    </script>
+
+</body>
+</html>
