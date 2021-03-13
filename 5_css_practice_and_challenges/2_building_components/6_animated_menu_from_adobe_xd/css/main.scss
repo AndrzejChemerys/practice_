@@ -91,6 +91,10 @@ nav {
     .close-btn {
         animation: show-x 1s 1s forwards;
     }
+
+    li: nth-of-type(1){
+        animation: menu-item-anim .6s forwards 1s ease-in-out;
+    }
 }
 
 @keyframes slide-menu {
@@ -107,6 +111,17 @@ nav {
         opacity: 0;
     }
     to {
+        opacity: 1;
+    }
+}
+
+@keyframes menu-item-anim {
+    from {
+        transform: translateY(60%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
         opacity: 1;
     }
 }
